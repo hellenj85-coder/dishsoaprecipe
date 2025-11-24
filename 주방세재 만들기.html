@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🫧 HANDMADE 주방세재 만들기 레시피</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f7f7f7;
+        }
+
+        /* 페이지 컨테이너 및 페이지 스타일 */
+        #recipe-container {
+            position: relative;
+            overflow: hidden; /* 페이지가 겹치지 않도록 숨김 */
+            min-height: 450px; /* 최소 높이 설정 */
+        }
+
+        .recipe-page {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            /* 초기에는 모든 페이지를 숨김 */
+            display: none; 
+            min-height: 400px;
+        }
+
+        /* 제목 및 구분선 스타일 */
+        h2 {
+            color: #1a73e8;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h3 {
+            color: #34a853;
+            border-left: 5px solid #34a853;
+            padding-left: 10px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+        
+        /* 테이블 스타일 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border: 1px solid #f0f0f0;
+        }
+        th {
+            background-color: #e8f5e9;
+            font-weight: bold;
+            color: #388e3c;
+            width: 20%;
+        }
+        
+        /* 만들기 과정 리스트 스타일 */
+        ol {
+            padding-left: 0;
+            list-style: none;
+        }
+        li {
+            background-color: #fafafa;
+            border-left: 4px solid #f9a825;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+        }
+        
+        /* 네비게이션 버튼 스타일 */
+        #navigation {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .nav-btn {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+        .nav-btn:hover {
+            background-color: #0b5fb2;
+        }
+        .nav-btn:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="recipe-container">
+        <div class="recipe-page" id="page-1">
+            <h2>🫧 HANDMADE 주방세재 만들기 레시피</h2>
+
+            <h3>📝 레시피 개요</h3>
+            <table>
+                <tr><th>용량</th><td>250g</td><th>난이도</th><td>⭐ 하 (Low)</td></tr>
+                <tr><th>소요 시간</th><td>⏱️ 10분</td><th>가열 과정</th><td>❌ 없음</td></tr>
+                <tr><th>보관 장소</th><td>🌡️ 상온</td><th>사용 기간</th><td>🗓️ 3개월</td></tr>
+            </table>
+            
+            <h3>📦 준비물</h3>
+            <ul>
+                <li>저울</li>
+                <li>500ml 유리계량컵 또는 비커</li>
+                <li>250ml 납작투명 디스펜서용기 1개</li>
+                <li>pH 측정 도구 (선택 사항)</li>
+            </ul>
+        </div>
+
+
+        <div class="recipe-page" id="page-2">
+            <h2>🧪 필요한 재료 (250g 기준)</h2>
+            <table>
+                <tr>
+                    <th>분류</th><th>재료명</th><th>용량 (g)</th><th>특징 및 역할</th>
+                </tr>
+                <tr><td>기타</td><td>식물성 글리세린</td><td>6g</td><td>보습</td></tr>
+                <tr><td>기타</td><td>쟁탄검</td><td>1.0g</td><td>점증제 (농도 조절)</td></tr>
+                <tr><td>워터</td><td>편백수</td><td>132.5g</td><td>탈취</td></tr>
+                
+                <tr><td>세정</td><td>코코글루코사이드</td><td>60g</td><td>에코인증, 비이온 계면활성제</td></tr>
+                <tr><td>세정</td><td>데실글루코사이드</td><td>30g</td><td>에코인증, 비이온 계면활성제</td></tr>
+                <tr><td>세정</td><td>라우릴글루코사이드</td><td>15g</td><td>에코인증, 비이온성 계면활성제</td></tr>
+                
+                <tr><td>첨가물</td><td>헥산디올</td><td>5g</td><td>보습제, 균 번식 억제</td></tr>
+                <tr><td>첨가물</td><td>레몬쥬스블렌딩오일</td><td>0.5g</td><td>향 (대체 가능)</td></tr>
+                <tr><td>첨가물</td><td>구연산수 (10%)</td><td>7g</td><td>pH 조절</td></tr>
+                
+                <tr><td colspan="2"><strong>총합</strong></td><td style="text-align:center;"><strong>257g</strong></td><td></td></tr>
+            </table>
+        </div>
+        
+        
+        <div class="recipe-page" id="page-3">
+            <h2>✨ 만들기 과정 (Step-by-Step)</h2>
+            <ol>
+                <li>
+                    <strong class="step-title">1단계: 점증제 분산 (핵심!)</strong>
+                    <p>글리세린에 **쟁탄검**을 넣어 덩어리가 생기지 않도록 충분히 섞습니다.</p>
+                </li>
+                <li>
+                    <strong class="step-title">2단계: 워터 및 세정 성분 투입</strong>
+                    <p>**편백수**를 넣고 섞은 후, 세 가지 **계면활성제**를 모두 넣고 **거품이 나지 않도록 천천히** 섞어줍니다.</p>
+                </li>
+                <li>
+                    <strong class="step-title">3단계: 기능성 재료 및 향 첨가</strong>
+                    <p>**헥산디올**과 **레몬쥬스블렌딩오일**을 넣고 가볍게 섞습니다.</p>
+                </li>
+                <li>
+                    <strong class="step-title">4단계: 점도 확인 및 pH 조절</strong>
+                    <p>점도가 올라오면 **구연산수(10%)**를 넣어 주방세제 적정 pH(6~10)를 맞춥니다.</p>
+                </li>
+                <li>
+                    <strong class="step-title">5단계: 용기에 담아 마무리</strong>
+                    <p>완성된 세제를 **디스펜서 용기**에 담아 사용합니다.</p>
+                </li>
+            </ol>
+        </div>
+    </div>
+    
+    <div id="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="prevPage()">&lt; 이전</button>
+        <span id="page-indicator"></span>
+        <button class="nav-btn" id="nextBtn" onclick="nextPage()">다음 &gt;</button>
+    </div>
+
+    <script>
+        // 페이지 네비게이션을 위한 자바스크립트
+        const pages = document.querySelectorAll('.recipe-page');
+        const totalPages = pages.length;
+        let currentPage = 1;
+
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicator = document.getElementById('page-indicator');
+
+        function showPage(pageNumber) {
+            // 모든 페이지 숨기기
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+
+            // 현재 페이지 보이기
+            const targetPage = document.getElementById(`page-${pageNumber}`);
+            if (targetPage) {
+                targetPage.style.display = 'block';
+                currentPage = pageNumber;
+            }
+
+            // 버튼 상태 업데이트 및 인디케이터 표시
+            prevBtn.disabled = (currentPage === 1);
+            nextBtn.disabled = (currentPage === totalPages);
+            indicator.textContent = `${currentPage} / ${totalPages}`;
+        }
+
+        function nextPage() {
+            if (currentPage < totalPages) {
+                showPage(currentPage + 1);
+            }
+        }
+
+        function prevPage() {
+            if (currentPage > 1) {
+                showPage(currentPage - 1);
+            }
+        }
+
+        // 페이지 로드 시 첫 번째 페이지 표시
+        document.addEventListener('DOMContentLoaded', () => {
+            showPage(1);
+        });
+    </script>
+
+</body>
+</html>
